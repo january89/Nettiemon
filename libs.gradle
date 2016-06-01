@@ -1,0 +1,57 @@
+ext{
+
+    versions = [
+
+            jdk : '1.8',
+            spring : '4.2.5.RELEASE',
+            netty : '5.0.0.Alpha2',
+            hibernate:'5.1.0.Final',
+            hibernateValidator:'5.2.4.Final',
+            springdatajpa:'1.9.4.RELEASE',
+            springsecurity:'4.0.4.RELEASE',
+            hikariCP: '2.4.5',
+            sitemesh:'3.0.1',
+            junit:'4.12',
+            lombok:'1.16.8',
+            jackson: '2.7.4',
+            bootstrap:'4.0.0-alpha.2',
+            mysql:'6.0.2'
+
+    ]
+
+}
+
+dependencies {
+
+    // front
+    compile("org.webjars:bootstrap:${versions.bootstrap}")
+
+    // netty
+    compile("io.netty:netty-all:${versions.netty}")
+
+    // spring
+    compile("org.springframework:spring-webmvc:${versions.spring}")
+    compile("org.springframework:spring-context:${versions.spring}")
+    compile("org.springframework:spring-context-support:${versions.spring}")
+    compile("org.sitemesh:sitemesh:${versions.sitemesh}")
+
+    // persistence
+    compile("org.springframework.data:spring-data-jpa:${versions.springdatajpa}")
+    compile("org.hibernate:hibernate-core:${versions.hibernate}")
+    compile("org.hibernate:hibernate-entitymanager:${versions.hibernate}")
+    compile("org.hibernate:hibernate-validator:${versions.hibernateValidator}")
+
+
+    // jspPage
+    compile("javax.servlet:javax.servlet-api:3.1.0")
+    compile("javax.servlet:jstl:1.2")
+
+    // db
+    compile("com.zaxxer:HikariCP:${versions.hikariCP}")
+    compile("mysql:mysql-connector-java:${versions.mysql}")
+
+    compile("com.fasterxml.jackson.core:jackson-annotations:${versions.jackson}")
+    compile("com.fasterxml.jackson.core:jackson-core:${versions.jackson}")
+    compile("com.fasterxml.jackson.core:jackson-databind:${versions.jackson}")
+
+}
