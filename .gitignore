@@ -87,4 +87,4 @@ gradle-app.setting
 
 
 # 이렇게 하면 모든 프로퍼티 파일은 안올라 가는 걸까요?
-.properties
+*.properties
