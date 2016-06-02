@@ -10,7 +10,6 @@ import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import io.netty.handler.ssl.SslContext;
 import io.netty.handler.ssl.util.SelfSignedCertificate;
-
 public class NettiemonServer {
 
     private static final boolean SSL = System.getProperty("SSL") != null;

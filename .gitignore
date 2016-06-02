@@ -84,3 +84,7 @@ gradle-app.setting
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
+
+
+# 이렇게 하면 모든 프로퍼티 파일은 안올라 가는 걸까요?
+.properties
