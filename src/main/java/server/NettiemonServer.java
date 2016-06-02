@@ -28,11 +28,14 @@ public class NettiemonServer {
         } else
             sslContext = null;
 
-        EventLoopGroup bossGroup = new NioEventLoopGroup(4);
-        EventLoopGroup workerGroup = new NioEventLoopGroup();
-        try{
+
+        try(
+                EventLoopGroup bossGroup = new NioEventLoopGroup(4);
+                EventLoopGroup workerGroup = new NioEventLoopGroup()
+        ){
 
             ServerBootstrap bootstrap = new ServerBootstrap();
+
             bootstrap.option(ChannelOption.SO_BACKLOG , 1024);
             bootstrap.group(bossGroup,workerGroup)
                     .channel(NioServerSocketChannel.class)
@@ -43,11 +46,6 @@ public class NettiemonServer {
 
             System.err.println("Open your web browser and navigate to " + (SSL ? "https" : "http") + "://127.0.0.1:" + PORT + '/');
             channel.closeFuture().sync();
-
-        } finally {
-
-            bossGroup.shutdownGracefully();
-            workerGroup.shutdownGracefully();
 
         }
 

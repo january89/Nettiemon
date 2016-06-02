@@ -25,6 +25,7 @@ class NettiemonServerHandler extends ChannelHandlerAdapter {
     @Override
     public void channelRead(ChannelHandlerContext ctx,Object msg){
         if(msg instanceof HttpRequest){
+
             HttpRequest req = (HttpRequest) msg;
 
             if(HttpHeaderUtil.is100ContinueExpected(req))

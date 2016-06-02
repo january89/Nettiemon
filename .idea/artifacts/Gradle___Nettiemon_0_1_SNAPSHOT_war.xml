@@ -1,0 +1,65 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : Nettiemon-0.1-SNAPSHOT.war">
+    <output-path>$PROJECT_DIR$/build/classes/artifacts/Nettiemon</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$" />
+    </properties>
+    <root id="archive" name="Nettiemon-0.1-SNAPSHOT.war">
+      <element id="javaee-facet-resources" facet="Nettiemon_main/web/Web Gradle : Nettiemon-0.1-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Nettiemon_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/bootstrap/4.0.0-alpha.2/da65a1151291bc5c5907fd2e5ad0b3bc1cead25a/bootstrap-4.0.0-alpha.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/5.0.0.Alpha2/9870d1ff5e71352077776a255f9d1494486af16/netty-all-5.0.0.Alpha2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.2.5.RELEASE/cf463cce3e4453eb4b9a69de2dcdfd60c3c57e0/spring-webmvc-4.2.5.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.2.5.RELEASE/a75e18322c7b362fe1daa26a245ae672ec0f3138/spring-context-4.2.5.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/4.2.5.RELEASE/72db9c52e8bd2dc3290cd51114583731f818356b/spring-context-support-4.2.5.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.sitemesh/sitemesh/3.0.1/3fe2fdca831ba69eebd820782b2ab4a4857d9d76/sitemesh-3.0.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/1.9.4.RELEASE/80b83510e67aa085b7d91d2d096d90133ec995de/spring-data-jpa-1.9.4.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.1.0.Final/1b5ac619df76cfd67222ca7cddcee6b0a5db8d0c/hibernate-core-5.1.0.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-entitymanager/5.1.0.Final/30d9f676363010b0958c9b738abc197235766f9c/hibernate-entitymanager-5.1.0.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-validator/5.2.4.Final/fb18766b576aa6632bcfe9a20a023cbd52bf9769/hibernate-validator-5.2.4.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/jstl/1.2/74aca283cd4f4b4f3e425f5820cda58f44409547/jstl-1.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zaxxer/HikariCP/2.4.5/89838c165c1761af469acd1f40a1c7bc430e634f/HikariCP-2.4.5.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/6.0.2/5ded70a4a41a8a7d869765d955a811b7b725771d/mysql-connector-java-6.0.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.7.4/84b2f8e53bd8a077d402bc99d9bce816c2b2d0f9/jackson-annotations-2.7.4.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.7.4/b8f38a249116b66d804a5ca2b14a3459b7913a94/jackson-core-2.7.4.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.7.4/1e9c6f3659644aeac84872c3b62d8e363bf4c96d/jackson-databind-2.7.4.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/jquery/1.11.1/195eda53ac8beba7bff08f9919b48c954c858590/jquery-1.11.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.2.5.RELEASE/fa992ae40f6fc47117282164e0433b71da385e94/spring-beans-4.2.5.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.2.5.RELEASE/251207b29f0f38f61e3495a2f7fb053cf1bfe8c/spring-core-4.2.5.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.2.5.RELEASE/a42bdfb833d0be6c18429aea3fb0fba81f85c6e8/spring-expression-4.2.5.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.2.5.RELEASE/49cd2430884b77172aa81e3fc33ef668ea1dab30/spring-web-4.2.5.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.2.5.RELEASE/858d6c70909b3ce7e07b59fc936f8ccfcd81c0aa/spring-aop-4.2.5.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/1.11.4.RELEASE/c2b1fd4dbf7dff772d6124bb35892759e8bf088e/spring-data-commons-1.11.4.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/4.1.9.RELEASE/d681430cfd81d6cd0e3c1cd5b6e08a1e4dd338ab/spring-orm-4.1.9.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.1.9.RELEASE/2b18a75d2d1652d54355a56484cfc29bbde39750/spring-tx-4.1.9.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.7/c4b70e763194d274477da4da9b05ea913e877268/aspectjrt-1.8.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.13/d78d2242e14e4182625152d225f76ae52b43491d/jcl-over-slf4j-1.7.13.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.0.Final/3616bb87707910296e2c195dc016287080bba5af/jboss-logging-3.3.0.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/5e731d961297e5a07290bfaf3db1fbc8bbbf405a/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.20.0-GA/a9cbcdfb7e9f86fbc74d3afae65f2248bfbf82a0/javassist-3.20.0-GA.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1/aabab3165b8ea936b9360abbf448459c0d04a5a4/geronimo-jta_1.1_spec-1.1.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss/jandex/2.0.0.Final/3e899258936f94649c777193e1be846387ed54b3/jandex-2.0.0.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.3.0/183407ff982e9375f1a1c4a51ed0a9307c598fc7/classmate-1.3.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/5.0.1.Final/71e1cff3fcb20d3b3af4f3363c3ddb24d33c6879/hibernate-commons-annotations-5.0.1.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.1.9.RELEASE/fa3e6e85ffe54d386371118d8aaac3217ae742e5/spring-jdbc-4.1.9.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/1.0.b2/3136ca936f64c9d68529f048c2618bd356bf85c9/xml-apis-1.0.b2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.16/3a6274f658487d5bfff9af3862beff6da1e7fd52/slf4j-api-1.7.16.jar" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/build/classes/artifacts/Nettiemon/exploded/Nettiemon-0.1-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
