@@ -88,4 +88,4 @@ gradle-app.setting
 
 # 리소스 파일을 보호하자!
 
-src/main/java/resources/
+/src/main/java/resources/
