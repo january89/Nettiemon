@@ -13,4 +13,6 @@ targetCompatibility = versions.jdk
 //UTF-8
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
-repositories { mavenCentral() }
+repositories { mavenCentral()
+    flatDir{ dirs 'fixlibs' }
+}

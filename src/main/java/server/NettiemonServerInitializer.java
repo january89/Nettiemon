@@ -27,18 +27,3 @@ class NettiemonServerInitializer extends ChannelInitializer<SocketChannel>{
     }
 
 }
-
-//    private final SslContext sslContext;
-//    NettiemonServerInitializer(SslContext sslContext){
-//        this.sslContext = sslContext;
-//    }
-//
-//    @Override
-//    public void initChannel(SocketChannel ch){
-//        ChannelPipeline channelpipeline = ch.pipeline();
-//        if(sslContext != null)
-//            channelpipeline.addLast(sslContext.newHandler(ch.alloc()));
-//
-//        channelpipeline.addLast(new HttpServerCodec());
-//        channelpipeline.addLast(new NettiemonServerHandler());
-//    }

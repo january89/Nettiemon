@@ -10,7 +10,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import java.net.InetSocketAddress;
 
 @Configuration
-@ComponentScan("java.server")
+@ComponentScan("server")
 @PropertySource("classpath:NettiemonServer.properties")
 public class NettiemonServerConfig {
 
@@ -22,10 +22,6 @@ public class NettiemonServerConfig {
 
     @Value("${tcp.port}")
     private int tcpPort;
-
-    public int getBossCount(){ return bossCount; }
-    public int getWorkerCount(){ return workerCount; }
-    public int getTcpPort(){ return tcpPort; }
 
     @Bean(name = "tcpSocketAddress")
     public InetSocketAddress tcpPort(){ return new InetSocketAddress(tcpPort); }

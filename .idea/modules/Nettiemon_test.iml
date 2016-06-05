@@ -22,6 +22,8 @@
     <orderEntry type="library" name="Gradle: org.hibernate:hibernate-validator:5.2.4.Final" level="project" />
     <orderEntry type="library" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" level="project" />
     <orderEntry type="library" name="Gradle: javax.servlet:jstl:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: :slf4j-api:1.7.21" level="project" />
+    <orderEntry type="library" name="Gradle: :slf4j-simple:1.7.21" level="project" />
     <orderEntry type="library" name="Gradle: com.zaxxer:HikariCP:2.4.5" level="project" />
     <orderEntry type="library" name="Gradle: mysql:mysql-connector-java:6.0.2" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.7.4" level="project" />

@@ -15,7 +15,8 @@ ext{
             lombok:'1.16.8',
             jackson: '2.7.4',
             bootstrap:'4.0.0-alpha.2',
-            mysql:'6.0.2'
+            mysql:'6.0.2',
+            slf4j:'1.7.21'
 
     ]
 
@@ -41,10 +42,14 @@ dependencies {
     compile("org.hibernate:hibernate-entitymanager:${versions.hibernate}")
     compile("org.hibernate:hibernate-validator:${versions.hibernateValidator}")
 
-
     // jspPage
     compile("javax.servlet:javax.servlet-api:3.1.0")
     compile("javax.servlet:jstl:1.2")
+
+    // localLibs
+    compile name : 'slf4j-api', version : versions.slf4j
+    compile name : 'slf4j-simple', version : versions.slf4j
+
 
     // db
     compile("com.zaxxer:HikariCP:${versions.hikariCP}")

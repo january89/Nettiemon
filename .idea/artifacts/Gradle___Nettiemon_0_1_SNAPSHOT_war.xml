@@ -55,6 +55,8 @@
           <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
           <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
           <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.16" />
+          <element id="file-copy" path="$PROJECT_DIR$/fixlibs/slf4j-api-1.7.21.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/fixlibs/slf4j-simple-1.7.21.jar" />
         </element>
       </element>
       <element id="directory" name="META-INF">

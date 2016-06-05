@@ -89,3 +89,6 @@ gradle-app.setting
 # 리소스 파일을 보호하자!
 
 /src/main/resources/
+
+# 백업파일 관리
+*.b
