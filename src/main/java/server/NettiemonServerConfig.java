@@ -15,13 +15,19 @@ import java.net.InetSocketAddress;
 public class NettiemonServerConfig {
 
     @Value("${boss.thread.count}")
-    private int bossCount;
+    private int bossThreadCount;
 
     @Value("${worker.thread.count}")
-    private int workerCount;
+    private int workerThreadCount;
 
     @Value("${tcp.port}")
     private int tcpPort;
+
+    @Bean(name = "bossThreadCount")
+    public int getBossThreadCount(){ return bossThreadCount; }
+
+    @Bean(name = "workerThreadCount")
+    public int getWorkerThreadCount(){ return workerThreadCount; }
 
     @Bean(name = "tcpSocketAddress")
     public InetSocketAddress tcpPort(){ return new InetSocketAddress(tcpPort); }

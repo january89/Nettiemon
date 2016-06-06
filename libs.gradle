@@ -49,7 +49,7 @@ dependencies {
     // localLibs
     compile name : 'slf4j-api', version : versions.slf4j
     compile name : 'slf4j-simple', version : versions.slf4j
-
+    testCompile("junit:junit:${versions.junit}")
 
     // db
     compile("com.zaxxer:HikariCP:${versions.hikariCP}")

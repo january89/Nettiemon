@@ -9,7 +9,7 @@ public class NettiemonServer {
 
         try(
                 AbstractApplicationContext springContext = new AnnotationConfigApplicationContext(NettiemonServerConfig.class)
-                ) {
+                ){
 
 
             springContext.registerShutdownHook();
