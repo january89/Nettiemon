@@ -17,6 +17,7 @@ ext{
             bootstrap:'4.0.0-alpha.2',
             mysql:'6.0.2',
             slf4j:'1.7.21'
+//            log4j:'2.6'
 
     ]
 
@@ -50,6 +51,7 @@ dependencies {
     compile name : 'slf4j-api', version : versions.slf4j
     compile name : 'slf4j-simple', version : versions.slf4j
     testCompile("junit:junit:${versions.junit}")
+//    compile ("org.apache.logging.log4j:log4j-core:${versions.log4j}")
 
     // db
     compile("com.zaxxer:HikariCP:${versions.hikariCP}")

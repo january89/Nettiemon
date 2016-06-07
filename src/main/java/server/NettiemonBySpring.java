@@ -33,7 +33,7 @@ class NettiemonBySpring{
 
         try(
                 EventLoopGroup bossGroup = new NioEventLoopGroup(bossThreadCount);
-                EventLoopGroup workerGroup = new NioEventLoopGroup(workerThreadCount);
+                EventLoopGroup workerGroup = new NioEventLoopGroup(workerThreadCount)
                 ){
 
             ServerBootstrap serverBootstrap = new ServerBootstrap();

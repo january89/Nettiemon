@@ -1,43 +1,44 @@
 package server;
 
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.hibernate.service.spi.ServiceException;
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import server.service.RequestParamException;
 
 import java.util.Map;
-import java.util.logging.LogManager;
 
 class HandlersApiTemplate implements HandlersApi{
+
     protected Logger logger;
     protected Map<String,String> reqData;
-    ObjectMapper apiResult;
+    protected ObjectNode apiResult;
+
 
     HandlersApiTemplate(Map<String,String> reqData){
-        this.logger = LogManager.getLogManager().getLogger(this.getClass());
-        this.apiResult = new ObjectMapper();
+        this.logger = LoggerFactory.getLogger(this.getClass());
+        this.apiResult = new ObjectMapper().createObjectNode();
         this.reqData = reqData;
 
         logger.info("request data : " + this.reqData);
     }
 
-    void executeService() {
+    public void executeService(){
         try {
+
             this.requestParamValidation();
 
             this.service();
+
         }
-        catch (JsonMappingException e) {
-            logger.error(e);
-            this.apiResult.addProperty("resultCode", "405");
-        }
-        catch (ServiceException e) {
-            logger.error(e);
-            this.apiResult.addProperty("resultCode", "501");
+        catch ( ServiceException | RequestParamException e ) {
+            logger.warn(e.toString());
+            this.apiResult.put("resultCode", "405");
         }
     }
 
-    public ObjectMapper getApiResult() {
+    public ObjectNode getApiResult() {
         return this.apiResult;
     }
 
@@ -46,6 +47,10 @@ class HandlersApiTemplate implements HandlersApi{
         if (getClass().getClasses().length == 0) {
             return;
         }
+    }
+
+    @Override
+    public void service() throws ServiceException {
 
     }
 
@@ -64,6 +69,5 @@ class HandlersApiTemplate implements HandlersApi{
         throw new IllegalArgumentException("There is no value with name '" + paramValue + " in Enum "
                 + paramClass.getClass().getName());
     }
-
 
 }
